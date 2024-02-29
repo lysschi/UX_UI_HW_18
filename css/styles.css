@@ -1,10 +1,66 @@
 body {
-    background-color: bisque;
+    height: 125vh;
+    background-color: peachpuff;
+    background-size: cover;
+    font-family: comfortaa;
+    margin-top: 80px;
+    padding: 30px;
 }
+
+.logo {
+    background-image: url("logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
 
 .inline-block {
     display: inline-block;
     vertical-align: top;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    float: right;
+    padding: 6px;
+    background-color: #dddddd;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .logo {
@@ -16,7 +72,7 @@ body {
 }
 
 nav {
-    
+
     width: 72%;
     padding: 1%;
     text-align: right;
@@ -24,12 +80,10 @@ nav {
 }
 
 .navigation {
-    background-color: #e9bdb6;
+    background-color: white;
+    font-family: sans-serif;
 }
 
-a {
-    display: block;   
-}
 
 
 ul {
@@ -37,7 +91,7 @@ ul {
     margin: 0;
     padding: 25px;
     overflow: hidden;
-    background-color: #e9bdb6;
+    background-color: white;
 
 }
 
@@ -61,23 +115,25 @@ h1 {
     text-align: center;
     padding: 15px 32px;
 }
+
 .heroImg {
-    height: 600px;
+    margin: 25px;
     padding: 25px;
-   
-    
+
+
 }
-.hero-image{
+
+.hero-image {
     display: block;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.flexContainer{
-    display:flex;
+.flexContainer {
+    display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .skill-card {
@@ -88,17 +144,21 @@ h1 {
     width: 600px;
 }
 
-@media only screen and (max-width:600){
-    flex-direction: column;
-    width: 100%;
-    grid-template-area:
-    grid-template-row:
-    grid-template-column:
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
 }
 
-footer{
+@media only screen and (max-width:600px) {
+    [class*="col-"] {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+footer {
     text-align: left;
     padding: 3px;
-    background-color: #e9bdb6;
+    background-color: white;
     color: darkbrown;
 }
