@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Show Popup After Site Loads</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="popup">
+    <div class=""contentBox">
+    <div class="imgBx">
+    </div>
+    <div class="content">
+        <h3>UX could be the missing piece to your business.</h3>
+        <a href="#">Explore my work</a>
+        <a href="#">See resume</a>
+    </div>
+    </div>
+    </div>
+    <span id="close" onclick="this.parentNode.parentNode.remove(); return false;">x</span>
+
     <header class="navigation">
         <div class="logo">
         <div class="container">
@@ -37,6 +50,7 @@
             <button type="button">See Resume</button>
         </div>
     </section>
+
     <section id="mySkills">
         <h1>My Skills</h1>
         <div class="flexContainer">
@@ -83,7 +97,8 @@
 
     </nav>
 
-</body>x
+</body>
 <script src=”https://code.jquery.com/jquery-3.6.1.min.js”></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </html>

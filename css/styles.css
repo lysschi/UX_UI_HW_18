@@ -2,9 +2,60 @@ body {
     height: 125vh;
     background-color: peachpuff;
     background-size: cover;
-    font-family: comfortaa;
+    font-family: 'comfortaa', sans-serif;
     margin-top: 80px;
     padding: 30px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-box {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.contentBox .imgBx
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: color;
+}
+.contentBox .content
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentBox .content h3
+{
+    color: white;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+#close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
 }
 
 .logo {
@@ -148,6 +199,42 @@ h1 {
     display: flex;
     flex-direction: row;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    min-height: 100vh; /* Sit on top */
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 @media only screen and (max-width:600px) {
     [class*="col-"] {
